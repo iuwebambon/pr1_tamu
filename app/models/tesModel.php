@@ -1,6 +1,6 @@
 <?php
 
-class tesModel extends Dbmysql
+class tesModel extends Model
 {
     protected $table = 'tes';
     protected $primaryKey = 'id';

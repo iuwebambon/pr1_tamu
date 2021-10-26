@@ -20,9 +20,9 @@ class Tabel_data extends Controller
             'title' => 'Table Tamu',
             'tamu' => $this->tamuModel->findAll(),
         ];
-        $this->view('templates/header', $data);
+        $this->view('templates/header',);
         $this->view('tabel_data/tamu', $data);
-        $this->view('templates/footer', $data);
+        $this->view('templates/footer',);
     }
 
     public function cetak_data_tamu($key = false)

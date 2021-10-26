@@ -54,22 +54,6 @@ class Model
         return $new;
     }
 
-    public function like($data = [])
-    {
-        $new = new Model;
-        $key = array_keys($data);
-        for ($i = 0; $i < count($key); $i++) {
-            $c[$i] = $key[$i] . ' LIKE :' . $key[$i];
-        }
-        $where = ' ' . implode(' || ', $c) . ' ';
-
-        $new->query = ' ' . $this->query . ' WHERE ' . $where . ' ';
-
-        $new->data = $data;
-
-        return $new;
-    }
-
     public function save($data = [])
     {
         // mengambil nama key dari data yang dikirim
@@ -140,25 +124,5 @@ class Model
         $new->query = $query;
 
         return $new;
-    }
-
-    public function user()
-    {
-        $this->db->query('SELECT * FROM users WHERE id = :id');
-        $this->db->bind('id', $_SESSION['login']);
-        return $this->db->resultObj()[0];
-    }
-
-    public function in_groups($key)
-    {
-        $this->db->query('SELECT * FROM v_users WHERE id = :id');
-        $this->db->bind('id', $_SESSION['login']);
-        $group = $this->db->single()['jabatan'];
-
-        if ($key == $group) {
-            return true;
-        }
-
-        return false;
     }
 }
