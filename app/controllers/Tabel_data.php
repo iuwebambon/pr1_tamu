@@ -18,11 +18,11 @@ class Tabel_data extends Controller
     {
         $data = [
             'title' => 'Table Tamu',
-            'tamu' => $this->tamuModel->findAll(),
+            'tamu' => $this->tamuModel->gettamu(),
         ];
-        $this->view('templates/header',);
+        $this->view('templates/header', $data);
         $this->view('tabel_data/tamu', $data);
-        $this->view('templates/footer',);
+        $this->view('templates/footer', $data);
     }
 
     public function cetak_data_tamu($key = false)
