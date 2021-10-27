@@ -2,6 +2,7 @@
 
 // BASEURL
 define('BASEURL', 'http://localhost/tamu');
+define('FOTOPROFILE', __DIR__ . "/../files/pribadi/images/profile");
 
 
 // DATABASE

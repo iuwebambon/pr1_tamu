@@ -27,3 +27,9 @@ function isLogin()
         exit;
     }
 }
+
+function user()
+{
+    $user = mysqli_query(conn(), "SELECT * FROM users");
+    return mysqli_fetch_assoc($user);
+}
