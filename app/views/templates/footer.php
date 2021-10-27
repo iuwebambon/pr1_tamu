@@ -93,7 +93,7 @@
 <script type="text/javascript" src="<?= BASEURL; ?>\files\assets\pages\dashboard\analytic-dashboard.min.js"></script>
 <script type="text/javascript" src="<?= BASEURL; ?>\files\assets\js\script.js"></script>
 <?php if (isset($_session['pesan'])) unset($_session['pesan']); ?>
-<!-- <script src="<?= BASEURL; ?>/files/pribadi/js/klik_kanan.js"></script> -->
+<script src="<?= BASEURL; ?>/files/pribadi/js/klik_kanan.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>

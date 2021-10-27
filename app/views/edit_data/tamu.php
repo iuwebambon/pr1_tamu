@@ -55,42 +55,42 @@
                                                     <div class="toclone">
                                                         <div class="unit">
                                                             <div class="input">
-                                                                <input type="text" name="no_identitas" value="<?= $tamu['no_identitas']; ?>" placeholder="no identitas">
+                                                                <input type="text" required autofocus="off" name="no_identitas" value="<?= $tamu['no_identitas']; ?>" placeholder="no identitas">
                                                             </div>
                                                         </div>
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="nama" value="<?= $tamu['nama']; ?>" placeholder="nama lengkap">
+                                                                    <input type="text" required autofocus="off" name="nama" value="<?= $tamu['nama']; ?>" placeholder="nama lengkap">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="alamat" value="<?= $tamu['alamat']; ?>" placeholder="alamat">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="j-row">
-                                                            <div class="span6 unit">
-                                                                <div class="input">
-                                                                    <input type="text" name="pekerjaan" value="<?= $tamu['pekerjaan']; ?>" placeholder="pekerjaan">
-                                                                </div>
-                                                            </div>
-                                                            <div class="span6 unit">
-                                                                <div class="input">
-                                                                    <input type="text" name="agama" value="<?= $tamu['agama']; ?>" placeholder="agama">
+                                                                    <input type="text" required autofocus="off" name="alamat" value="<?= $tamu['alamat']; ?>" placeholder="alamat">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="keperluan" value="<?= $tamu['keperluan']; ?>" placeholder="keperluan">
+                                                                    <input type="text" required autofocus="off" name="pekerjaan" value="<?= $tamu['pekerjaan']; ?>" placeholder="pekerjaan">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <select name="jenis_kelamin">
+                                                                    <input type="text" required autofocus="off" name="agama" value="<?= $tamu['agama']; ?>" placeholder="agama">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="j-row">
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <input type="text" required autofocus="off" name="keperluan" value="<?= $tamu['keperluan']; ?>" placeholder="keperluan">
+                                                                </div>
+                                                            </div>
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <select required autofocus="off" name="jenis_kelamin">
                                                                         <option <?php if ($tamu['jenis_kelamin'] == 'Laki-laki') echo 'selected'; ?> value="Laki-laki">Laki-laki</option>
                                                                         <option <?php if ($tamu['jenis_kelamin'] == 'Perempuan') echo 'selected'; ?> value="Perempuan">Perempuan</option>
                                                                     </select>
@@ -100,12 +100,12 @@
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="no_telepon" value="<?= $tamu['no_telepon']; ?>" placeholder="no telepon">
+                                                                    <input type="text" required autofocus="off" name="no_telepon" value="<?= $tamu['no_telepon']; ?>" placeholder="no telepon">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="date" name="tanggal" value="<?= $tamu['tanggal']; ?>" placeholder="tanggal">
+                                                                    <input type="date" required autofocus="off" name="tanggal" value="<?= $tamu['tanggal']; ?>" placeholder="tanggal">
                                                                 </div>
                                                             </div>
                                                         </div>

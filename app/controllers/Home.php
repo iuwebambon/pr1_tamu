@@ -2,6 +2,10 @@
 
 class Home extends Controller
 {
+    public function __construct()
+    {
+        isLogin();
+    }
     public function index()
     {
         $data = [

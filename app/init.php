@@ -2,6 +2,7 @@
 
 require_once 'config.php';
 // require_once 'core/App.php';
+// require_once 'core/Controller.php';
 require_once 'core/Fungsi.php';
 
 spl_autoload_register(function ($class) {

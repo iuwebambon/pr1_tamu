@@ -31,6 +31,16 @@
 
                 <!-- Page-body start -->
                 <div class="page-body">
+                    <?php if (isset($_SESSION['pesan'])) : ?>
+                        <div class="col-sm-12 col-md-12 col-xl-12">
+                            <div class="alert alert-info">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <i class="icofont icofont-close-line-circled"></i>
+                                </button>
+                                <strong>Success!</strong> Data tamu <code> <?= flash(); ?></code>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                     <div class="row">
                         <div class="col-sm-12">
                             <!-- Zero config.table start -->
@@ -66,7 +76,7 @@
                                                             <a href="<?= BASEURL; ?>/Edit_data/tamu/<?= $t['no_identitas']; ?>">
                                                                 <button class="btn btn-warning btn-icon"><i class="fa fa-edit"></i></button>
                                                             </a>
-                                                            <a href="<?= BASEURL; ?>Hapus_data/tamu/<?= $t['no_identitas']; ?>">
+                                                            <a href="<?= BASEURL; ?>Tabel_data/hapus/<?= $t['no_identitas']; ?>">
                                                                 <button class="btn btn-danger btn-icon"><i class="fa fa-trash"></i></button>
                                                             </a>
                                                         </td>

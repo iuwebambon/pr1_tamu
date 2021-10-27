@@ -187,7 +187,7 @@
                                             </a>
                                         </li> -->
                                         <li>
-                                            <a href="auth-normal-sign-in.htm">
+                                            <a href="<?= BASEURL; ?>/login/off">
                                                 <i class="feather icon-log-out"></i> Logout
                                             </a>
                                         </li>

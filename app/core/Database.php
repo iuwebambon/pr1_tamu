@@ -10,6 +10,7 @@ class Database
     private $dbh;
     private $stmt;
 
+    // koneksi PDO
     public function __construct()
     {
         // data source name
@@ -73,5 +74,10 @@ class Database
     public function rowCount()
     {
         return $this->stmt->rowCount();
+    }
+
+    public function conn()
+    {
+        mysqli_connect($this->host, $this->user, $this->pass, $this->db_name);
     }
 }

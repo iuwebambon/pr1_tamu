@@ -5,20 +5,23 @@ class Tabel_data extends Controller
 
     public function __construct()
     {
-        $this->tamuModel = $this->model('tamuModel');
+        isLogin();
     }
 
     public function index()
     {
-        header("Location: " . BASEURL);
+        header("Location: " . BASEURL . "/Tabel_data/tamu");
         exit;
     }
 
     public function tamu()
     {
+        $tamu = mysqli_query(conn(), "SELECT * FROM tamu");
+        // $tamu = mysqli_fetch_assoc($tamu);
+
         $data = [
             'title' => 'Table Tamu',
-            'tamu' => $this->tamuModel->gettamu(),
+            'tamu' => $tamu
         ];
         $this->view('templates/header', $data);
         $this->view('tabel_data/tamu', $data);
@@ -28,23 +31,23 @@ class Tabel_data extends Controller
     public function cetak_data_tamu($key = false)
     {
         if ($key != false) {
-            $val = $this->tamuModel->like([
-                'nama' => $key,
-                'alamat' => $key,
-                'pekerjaan' => $key,
-                'agama' => $key,
-                'jenis_kelamin' => $key,
-                'keperluan' => $key,
-                'tanggal' => $key,
-                'no_telepon' => $key
-            ])->findAll();
+            $tamu = mysqli_query(conn(), "SELECT * FROM tamu WHERE no_identitas LIKE '%$key%' OR nama LIKE '%$key%' OR jenis_kelamin LIKE '%$key%' OR agama LIKE '%$key%'");
         } else {
-            $val = $this->tamuModel->gettamu();
+            $tamu = mysqli_query(conn(), "SELECT * FROM tamu");
         }
+
         $data = [
             'title' => 'Cetak Data Tamu',
-            'tamu' => $val
+            'tamu'  => $tamu
         ];
         $this->view('tabel_data/cetak_data_tamu', $data);
+    }
+
+    public function hapus($id)
+    {
+        mysqli_query(conn(), "DELETE FROM `tamu` WHERE `no_identitas` = '$id'");
+        setFlash("Berhasil dihapus");
+        header("Location: " . BASEURL . "/Tabel_data/tamu");
+        exit;
     }
 }

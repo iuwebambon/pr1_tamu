@@ -9,7 +9,7 @@
                         <div class="col-lg-8">
                             <div class="page-header-title">
                                 <div class="d-inline">
-                                    <h4>Master Data Tamu <?= getFlash(); ?></h4>
+                                    <h4>Master Data Tamu</h4>
                                     <!-- <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span> -->
                                 </div>
                             </div>
@@ -40,22 +40,20 @@
                                 <div class="card-header">
                                     <!-- <h5>Master Data Tamu</h5> -->
                                     <!-- <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span> -->
-                                    <?php if (isset($error) && !empty($error)) { ?>
+                                    <?php if (isset($err) && $err == 1) { ?>
                                         <div class="col-sm-12 col-md-12 col-xl-12">
                                             <div class="alert alert-danger border-danger">
                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                     <i class="icofont icofont-close-line-circled"></i>
                                                 </button>
-                                                <?php for ($j = 0; $j < count($error); $j++) { ?>
-                                                    <strong>Gagal!</strong> <code><?= $error[$j]; ?></code><br>
-                                                <?php } ?>
+                                                <strong>Gagal!</strong> <code>Terjadi masalah saat mencoba menyimpan data</code>
                                             </div>
                                         </div>
                                     <?php } ?>
                                 </div>
                                 <div class="card-block">
                                     <div class="wrapper wrapper-640">
-                                        <form action="<?= BASEURL; ?>/Master_data/tamu" method="post" class="j-forms" id="j-forms">
+                                        <form action="" method="post" class="j-forms" id="j-forms">
                                             <!-- end /.header-->
                                             <div class="content">
                                                 <div class="divider-text gap-top-45 gap-bottom-45">
@@ -68,42 +66,42 @@
                                                         <button class=" delete  btn btn-danger m-b-15">Hapus tamu ini</button>
                                                         <div class="unit">
                                                             <div class="input">
-                                                                <input type="text" name="no_identitas[]" placeholder="no identitas">
+                                                                <input type="text" required autocomplete="off" name="no_identitas[]" placeholder="no identitas">
                                                             </div>
                                                         </div>
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="nama[]" placeholder="nama lengkap">
+                                                                    <input type="text" required autocomplete="off" name="nama[]" placeholder="nama lengkap">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="alamat[]" placeholder="alamat">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="j-row">
-                                                            <div class="span6 unit">
-                                                                <div class="input">
-                                                                    <input type="text" name="pekerjaan[]" placeholder="pekerjaan">
-                                                                </div>
-                                                            </div>
-                                                            <div class="span6 unit">
-                                                                <div class="input">
-                                                                    <input type="text" name="agama[]" placeholder="agama">
+                                                                    <input type="text" required autocomplete="off" name="alamat[]" placeholder="alamat">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="keperluan[]" placeholder="keperluan">
+                                                                    <input type="text" required autocomplete="off" name="pekerjaan[]" placeholder="pekerjaan">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <select name="jenis_kelamin[]">
+                                                                    <input type="text" required autocomplete="off" name="agama[]" placeholder="agama">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="j-row">
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <input type="text" required autocomplete="off" name="keperluan[]" placeholder="keperluan">
+                                                                </div>
+                                                            </div>
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <select required autocomplete="off" name="jenis_kelamin[]">
                                                                         <option value="">jenis kelamin</option>
                                                                         <option value="Laki-laki">Laki-laki</option>
                                                                         <option value="Perempuan">Perempuan</option>
@@ -114,12 +112,12 @@
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="text" name="no_telepon[]" placeholder="no telepon">
+                                                                    <input type="text" required autocomplete="off" name="no_telepon[]" placeholder="no telepon">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="date" name="tanggal[]" placeholder="tanggal">
+                                                                    <input type="date" required autocomplete="off" name="tanggal[]" placeholder="tanggal">
                                                                 </div>
                                                             </div>
                                                         </div>
