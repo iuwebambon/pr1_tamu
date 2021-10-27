@@ -46,7 +46,7 @@
                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                     <i class="icofont icofont-close-line-circled"></i>
                                                 </button>
-                                                <strong>Gagal!</strong> <code>Terjadi masalah saat mencoba menyimpan data</code>
+                                                <strong>Gagal!</strong> <code>Nomor Identitas tidak sudah dipakai tamu yang lain</code>
                                             </div>
                                         </div>
                                     <?php } ?>

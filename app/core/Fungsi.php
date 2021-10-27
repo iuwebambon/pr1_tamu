@@ -15,7 +15,6 @@ function flash()
     if (isset($_SESSION['pesan'])) {
         $flash = $_SESSION['pesan'];
         unset($_SESSION['pesan']);
-        session_destroy();
         return $flash;
     }
 }

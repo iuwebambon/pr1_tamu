@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Okt 2021 pada 15.01
+-- Waktu pembuatan: 27 Okt 2021 pada 15.13
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 7.3.29
 
@@ -44,31 +44,8 @@ CREATE TABLE `tamu` (
 --
 
 INSERT INTO `tamu` (`no_identitas`, `nama`, `alamat`, `pekerjaan`, `agama`, `keperluan`, `jenis_kelamin`, `no_telepon`, `tanggal`) VALUES
-('201871080', 'Claudio Andre Thenu', 'Ambon', 'Pelajar', 'Kristen', 'Belajar', 'Laki-laki', '081243559932', '2021-10-29'),
-('201971060', 'Marthin Alfreinsco Salakory', 'Ambon', 'Developer', 'Kristen', 'Belajar', 'Laki-laki', '081318812027', '2021-10-15'),
-('cxz', 'zcx', 'cz', 'cxz', 'cxz', 'cxz', 'Perempuan', 'cxz', '2021-10-27'),
-('ok', 'd', 'd', 'c', 'x', 'c', 'Laki-laki', 'c', '2021-10-27');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `users`
---
-
-CREATE TABLE `users` (
-  `id` varchar(50) NOT NULL,
-  `fullname` varchar(50) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `foto` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `users`
---
-
-INSERT INTO `users` (`id`, `fullname`, `username`, `password`, `foto`) VALUES
-('IUWebAmbon', 'ADMIN', 'admin', 'admin', 'fotoprofile.jpg');
+('201871088', 'Claudio Andre Thenu', 'Ambon', 'Pelajar', 'Kristen', 'Belajar', 'Laki-laki', '081248808575', '2021-10-29'),
+('201971060', 'Marthin Alfreinsco Salakory', 'Ambon', 'Developer', 'Kristen', 'Belajar', 'Laki-laki', '081318812027', '2021-10-15');
 
 --
 -- Indexes for dumped tables
@@ -79,12 +56,6 @@ INSERT INTO `users` (`id`, `fullname`, `username`, `password`, `foto`) VALUES
 --
 ALTER TABLE `tamu`
   ADD PRIMARY KEY (`no_identitas`);
-
---
--- Indeks untuk tabel `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -76,7 +76,7 @@
                                                             <a href="<?= BASEURL; ?>/Edit_data/tamu/<?= $t['no_identitas']; ?>">
                                                                 <button class="btn btn-warning btn-icon"><i class="fa fa-edit"></i></button>
                                                             </a>
-                                                            <a href="<?= BASEURL; ?>Tabel_data/hapus/<?= $t['no_identitas']; ?>">
+                                                            <a href="<?= BASEURL; ?>/Tabel_data/hapus/<?= $t['no_identitas']; ?>">
                                                                 <button class="btn btn-danger btn-icon"><i class="fa fa-trash"></i></button>
                                                             </a>
                                                         </td>
