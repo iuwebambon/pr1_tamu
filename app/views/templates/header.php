@@ -98,7 +98,7 @@
                             <i class="feather icon-menu"></i>
                         </a>
                         <a href="<?= BASEURL; ?>">
-                            <img style="margin-left: 100%;" width="60px" height="60px" class="img-fluid" src="<?= BASEURL; ?>\files\pribadi\images\logo.png" alt="Theme-Logo">
+                            <img width="40px" class="img-fluid" src="<?= BASEURL; ?>\files\pribadi\images\logo.png" alt="Logo Siwalima">
                         </a>
                         <a class="mobile-options">
                             <i class="feather icon-more-horizontal"></i>

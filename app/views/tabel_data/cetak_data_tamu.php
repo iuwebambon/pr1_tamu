@@ -37,10 +37,10 @@
             </div>
             <div class="title">
                 <div class="atas">
-                    BADAN ARSIP DAN PERPUSTAKAAN PROVINSI ACEH
+                    DINAS KOMUNIKASI DAN INFORMATIKA PROVINSI MALUKU
                 </div>
                 <div class="bawah">
-                    Jl.T.NyakAriefLamgugob Banda Aceh
+                    Jalan Dr.Latumenten, Kelurahan Waihaong, Kota Ambon, Maluku
                 </div>
             </div>
         </div>

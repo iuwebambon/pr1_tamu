@@ -98,20 +98,23 @@
                                 </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
-                                        <button name="submit" type="submit" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Login</button>
+                                        <button name="submit" type="submit" class="btn btn-success btn-md btn-block waves-effect waves-light text-center m-b-20">Login</button>
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="row">
-                                    <div class="col-md-10">
-                                        <p class="text-inverse text-left m-b-0">Silahkan login terlebih dahulu.</p>
-                                    </div>
-                                    <div class="col-md-2">
+                                    <!-- <div class="col-2">
                                         <img width="50px" height="50px" src="<?= BASEURL; ?>\files\pribadi\images\logo.png" alt="small-logo.png">
                                     </div>
+                                    <div class="col-8">
+                                        <p class="text-center">Silahkan login terlebih dahulu.</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img width="50px" height="50px" src="<?= BASEURL; ?>\files\pribadi\images\logo.png" alt="small-logo.png">
+                                    </div> -->
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12 text-center">
+                                    <div class="col-12 text-center">
                                         <a target="blank" href="https://github.com/iuwebambon">
                                             Copyright IUWebAmbon 2021
                                         </a>
