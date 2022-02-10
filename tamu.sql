@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Okt 2021 pada 15.13
--- Versi server: 10.4.20-MariaDB
--- Versi PHP: 7.3.29
+-- Waktu pembuatan: 10 Feb 2022 pada 14.40
+-- Versi server: 10.4.21-MariaDB
+-- Versi PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,19 +33,43 @@ CREATE TABLE `tamu` (
   `alamat` varchar(50) NOT NULL,
   `pekerjaan` varchar(50) NOT NULL,
   `agama` varchar(50) NOT NULL,
+  `asal_kantor` varchar(255) NOT NULL,
+  `jabatan` varchar(255) NOT NULL,
   `keperluan` varchar(50) NOT NULL,
   `jenis_kelamin` varchar(50) NOT NULL,
   `no_telepon` varchar(50) NOT NULL,
-  `tanggal` varchar(50) NOT NULL
+  `tanggal` varchar(50) NOT NULL,
+  `paraf` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `tamu`
 --
 
-INSERT INTO `tamu` (`no_identitas`, `nama`, `alamat`, `pekerjaan`, `agama`, `keperluan`, `jenis_kelamin`, `no_telepon`, `tanggal`) VALUES
-('201871088', 'Claudio Andre Thenu', 'Ambon', 'Pelajar', 'Kristen', 'Belajar', 'Laki-laki', '081248808575', '2021-10-29'),
-('201971060', 'Marthin Alfreinsco Salakory', 'Ambon', 'Developer', 'Kristen', 'Belajar', 'Laki-laki', '081318812027', '2021-10-15');
+INSERT INTO `tamu` (`no_identitas`, `nama`, `alamat`, `pekerjaan`, `agama`, `asal_kantor`, `jabatan`, `keperluan`, `jenis_kelamin`, `no_telepon`, `tanggal`, `paraf`) VALUES
+('201871020', 'Claudio Andre Thenu', 'Lateri', 'Pelajar', 'Kristen', 'Unpatti', 'Mahasiswa', 'Kuliah', 'Laki-laki', '081248808575', '2022-02-10', '620513a5a6b1e.png'),
+('201971060', 'Marthin Alfreinsco Salakory', 'Lateri', 'Pelajar', 'Kristen', 'Unpatti', 'Mahasiswa', 'Kuliah', 'Laki-laki', '081318812027', '2022-02-10', '62051309a5503.png');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `users`
+--
+
+CREATE TABLE `users` (
+  `id` varchar(255) NOT NULL,
+  `fullname` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `foto` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`id`, `fullname`, `username`, `password`, `foto`) VALUES
+('IUWebAmbon', 'Admin', 'admin', 'admin', 'fotoprofile.jpg');
 
 --
 -- Indexes for dumped tables
@@ -56,6 +80,12 @@ INSERT INTO `tamu` (`no_identitas`, `nama`, `alamat`, `pekerjaan`, `agama`, `kep
 --
 ALTER TABLE `tamu`
   ADD PRIMARY KEY (`no_identitas`);
+
+--
+-- Indeks untuk tabel `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
