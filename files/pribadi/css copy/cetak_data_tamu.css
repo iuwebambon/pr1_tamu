@@ -1,0 +1,112 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.tombol {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.tombol .kembali {
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 15px;
+  background: #ff0000;
+  color: white;
+  border: white 3px white;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin-top: 10px;
+}
+
+.tombol .cetak {
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 15px;
+  background: #22a4cf;
+  color: white;
+  border: white 3px white;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+button {
+  text-decoration: none;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  width: 980px;
+  margin: auto;
+}
+
+.container .header .logo {
+  float: left;
+  width: 120px;
+}
+
+.container .header .logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.container .header .title {
+  float: right;
+  text-align: center;
+  width: 860px;
+}
+
+.container .header .title .atas {
+  margin-top: 20px;
+  font-size: 33px;
+}
+
+.container .header .title .bawah {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+hr {
+  background-color: black;
+  margin-top: 10px;
+  width: 980px;
+  height: 2px;
+  float: right;
+}
+
+.judul {
+  width: 980px;
+  font-size: 30px;
+  text-align: center;
+  float: right;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.tanggal {
+  width: 980px;
+  font-size: 20px;
+  float: right;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 980px;
+  float: right;
+  text-align: left;
+  border: 1px solid black;
+}
+
+table,
+th,
+td {
+  border: 0.5px solid black;
+}

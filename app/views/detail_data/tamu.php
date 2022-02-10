@@ -70,6 +70,14 @@
                                                     <td><?= $tamu['agama']; ?></td>
                                                 </tr>
                                                 <tr>
+                                                    <td>Asal Kantor</td>
+                                                    <td><?= $tamu['asal_kantor']; ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jabatan</td>
+                                                    <td><?= $tamu['jabatan']; ?></td>
+                                                </tr>
+                                                <tr>
                                                     <td>Keperluan</td>
                                                     <td><?= $tamu['keperluan']; ?></td>
                                                 </tr>
@@ -84,6 +92,14 @@
                                                 <tr>
                                                     <td>Tanggal</td>
                                                     <td><?= $tamu['tanggal']; ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Paraf</td>
+                                                    <td>
+                                                        <a href="<?= BASEURL; ?>/files/pribadi/images/paraf/<?= $tamu['paraf']; ?>" target="_blank">
+                                                            <img src="<?= BASEURL; ?>/files/pribadi/images/paraf/<?= $tamu['paraf']; ?>" height="92px" width="336px">
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

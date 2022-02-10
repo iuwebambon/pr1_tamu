@@ -55,17 +55,20 @@
                                                     <div class="toclone">
                                                         <div class="unit">
                                                             <div class="input">
+                                                                <li>harus diisi !!!</li>
                                                                 <input type="text" required autofocus="off" name="no_identitas" value="<?= $tamu['no_identitas']; ?>" placeholder="no identitas">
                                                             </div>
                                                         </div>
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <li>harus diisi !!!</li>
                                                                     <input type="text" required autofocus="off" name="nama" value="<?= $tamu['nama']; ?>" placeholder="nama lengkap">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <li>harus diisi !!!</li>
                                                                     <input type="text" required autofocus="off" name="alamat" value="<?= $tamu['alamat']; ?>" placeholder="alamat">
                                                                 </div>
                                                             </div>
@@ -73,11 +76,13 @@
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <li>harus diisi !!!</li>
                                                                     <input type="text" required autofocus="off" name="pekerjaan" value="<?= $tamu['pekerjaan']; ?>" placeholder="pekerjaan">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <li>harus diisi !!!</li>
                                                                     <input type="text" required autofocus="off" name="agama" value="<?= $tamu['agama']; ?>" placeholder="agama">
                                                                 </div>
                                                             </div>
@@ -85,11 +90,27 @@
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <li>harus diisi !!!</li>
+                                                                    <input type="text" required autofocus="off" name="asal_kantor" value="<?= $tamu['asal_kantor']; ?>" placeholder="asal_kantor">
+                                                                </div>
+                                                            </div>
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <li>harus diisi !!!</li>
+                                                                    <input type="text" required autofocus="off" name="jabatan" value="<?= $tamu['jabatan']; ?>" placeholder="jabatan">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="j-row">
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <li>harus diisi !!!</li>
                                                                     <input type="text" required autofocus="off" name="keperluan" value="<?= $tamu['keperluan']; ?>" placeholder="keperluan">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <li>harus diisi !!!</li>
                                                                     <select required autofocus="off" name="jenis_kelamin">
                                                                         <option <?php if ($tamu['jenis_kelamin'] == 'Laki-laki') echo 'selected'; ?> value="Laki-laki">Laki-laki</option>
                                                                         <option <?php if ($tamu['jenis_kelamin'] == 'Perempuan') echo 'selected'; ?> value="Perempuan">Perempuan</option>
@@ -100,13 +121,27 @@
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <li>harus diisi !!!</li>
                                                                     <input type="text" required autofocus="off" name="no_telepon" value="<?= $tamu['no_telepon']; ?>" placeholder="no telepon">
                                                                 </div>
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="date" required autofocus="off" name="tanggal" value="<?= $tamu['tanggal']; ?>" placeholder="tanggal">
+                                                                    <li>harus diisi !!!</li>
+                                                                    <input class="form-control" type="date" required autofocus="off" name="tanggal" value="<?= $tamu['tanggal']; ?>" placeholder="tanggal">
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="signature-pad" class="unit">
+                                                            <div class="input">
+                                                                <li>boleh dikosongkan !!!</li>
+                                                                <input type="text" id="paraf" name="paraf" placeholder="paraf" readonly>
+                                                                <canvas class="form-control"></canvas>
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" class="button" data-action="clear">Clear</button>
+                                                                <button type="button" class="button" data-action="undo">Undo</button>
+                                                                <button type="button" class="button" data-action="save-png">Simpan</button>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -16,6 +16,8 @@
     <meta name="description" content="#">
     <meta name="keywords" content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="#">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Favicon icon -->
     <link rel="icon" href="<?= BASEURL; ?>\files\pribadi\images\logo.png" type="image/x-icon">
     <!-- Google font-->

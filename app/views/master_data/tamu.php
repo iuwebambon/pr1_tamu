@@ -62,8 +62,8 @@
                                                 <!-- start cloned link elements -->
                                                 <div class="clone-link">
                                                     <div class="toclone">
-                                                        <button class=" clone btn btn-primary m-b-15">Tambah tamu</button>
-                                                        <button class=" delete  btn btn-danger m-b-15">Hapus tamu ini</button>
+                                                        <!-- <button class=" clone btn btn-primary m-b-15">Tambah tamu</button>
+                                                        <button class=" delete  btn btn-danger m-b-15">Hapus tamu ini</button> -->
                                                         <div class="unit">
                                                             <div class="input">
                                                                 <input type="text" required autocomplete="off" name="no_identitas[]" placeholder="no identitas">
@@ -96,6 +96,18 @@
                                                         <div class="j-row">
                                                             <div class="span6 unit">
                                                                 <div class="input">
+                                                                    <input type="text" required autocomplete="off" name="asal_kantor[]" placeholder="asal kantor">
+                                                                </div>
+                                                            </div>
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <input type="text" required autocomplete="off" name="jabatan[]" placeholder="jabatan">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="j-row">
+                                                            <div class="span6 unit">
+                                                                <div class="input">
                                                                     <input type="text" required autocomplete="off" name="keperluan[]" placeholder="keperluan">
                                                                 </div>
                                                             </div>
@@ -117,8 +129,20 @@
                                                             </div>
                                                             <div class="span6 unit">
                                                                 <div class="input">
-                                                                    <input type="date" required autocomplete="off" name="tanggal[]" placeholder="tanggal">
+                                                                    <input class="form-control" type="date" required autocomplete="off" name="tanggal[]" placeholder="tanggal">
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="signature-pad" class="unit">
+                                                            <div class="input">
+                                                                <!-- <label for="form-label">&nbsp; Paraf :</label><br> -->
+                                                                <input type="text" id="paraf" name="paraf[]" placeholder="paraf" readonly>
+                                                                <canvas class="form-control"></canvas>
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" class="button" data-action="clear">Clear</button>
+                                                                <button type="button" class="button" data-action="undo">Undo</button>
+                                                                <button type="button" class="button" data-action="save-png">Simpan</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -128,7 +152,7 @@
                                             </div>
                                             <!-- end /.content -->
                                             <div class="footer">
-                                                <button type="submit" class="btn btn-primary m-b-0">Simpan</button>
+                                                <button type="submit" class="btn btn-primary m-b-0" onclick="if($('#paraf').val() == ''){alert('Paraf tidak boleh kosong'); return false} ">Simpan</button>
                                             </div>
                                             <!-- end /.footer -->
                                         </form>

@@ -54,10 +54,13 @@
                 <th>Alamat</th>
                 <th>Pekerjaan</th>
                 <th>Agama</th>
+                <th>Asal Kantor</th>
+                <th>Jabatan</th>
                 <th>Jenis Kelamin</th>
                 <th>Keperluan</th>
                 <th>Tanggal</th>
                 <th>No Telepon</th>
+                <th>Paraf</th>
             </tr>
             <?php foreach ($tamu as $t) : ?>
                 <tr>
@@ -66,10 +69,17 @@
                     <td><?= $t['alamat']; ?></td>
                     <td><?= $t['pekerjaan']; ?></td>
                     <td><?= $t['agama']; ?></td>
+                    <td><?= $t['asal_kantor']; ?></td>
+                    <td><?= $t['jabatan']; ?></td>
                     <td><?= $t['jenis_kelamin']; ?></td>
                     <td><?= $t['keperluan']; ?></td>
                     <td><?= $t['tanggal']; ?></td>
                     <td><?= $t['no_telepon']; ?></td>
+                    <td>
+                        <a href="<?= BASEURL; ?>/files/pribadi/images/paraf/<?= $t['paraf']; ?>" target="_blank">
+                            <img src="<?= BASEURL; ?>/files/pribadi/images/paraf/<?= $t['paraf']; ?>" height="46px" width="168px">
+                        </a>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </table>

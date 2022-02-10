@@ -95,6 +95,11 @@
 <?php if (isset($_session['pesan'])) unset($_session['pesan']); ?>
 <script src="<?= BASEURL; ?>/files/pribadi/js/klik_kanan.js"></script>
 
+<!-- Untuk tanda tangan -->
+<script src="<?= BASEURL; ?>/files/pribadi/js/signature_pad.umd.js"></script>
+<script src="<?= BASEURL; ?>/files/pribadi/js/app.js"></script>
+
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>

@@ -57,8 +57,9 @@
                                                 <tr>
                                                     <th>Nomor Identitas</th>
                                                     <th>Nama</th>
-                                                    <th>Jenis Kelamin</th>
-                                                    <th>Agama</th>
+                                                    <th>Asal Kantor</th>
+                                                    <th>Jabatan</th>
+                                                    <th>Paraf</th>
                                                     <th><i class="fa fa-cog"></i></th>
                                                 </tr>
                                             </thead>
@@ -67,8 +68,13 @@
                                                     <tr>
                                                         <td><?= $t['no_identitas']; ?></td>
                                                         <td><?= $t['nama']; ?></td>
-                                                        <td><?= $t['jenis_kelamin']; ?></td>
-                                                        <td><?= $t['agama']; ?></td>
+                                                        <td><?= $t['asal_kantor']; ?></td>
+                                                        <td><?= $t['jabatan']; ?></td>
+                                                        <td>
+                                                            <a href="<?= BASEURL; ?>/files/pribadi/images/paraf/<?= $t['paraf']; ?>" target="_blank">
+                                                                <img src="<?= BASEURL; ?>/files/pribadi/images/paraf/<?= $t['paraf']; ?>" height="46px" width="168px">
+                                                            </a>
+                                                        </td>
                                                         <td>
                                                             <a href="<?= BASEURL; ?>/Detail_data/tamu/<?= $t['no_identitas']; ?>">
                                                                 <button class="btn btn-success btn-icon"><i class="icofont icofont-eye-alt"></i></button>
@@ -87,8 +93,9 @@
                                                 <tr>
                                                     <th>Nomor Identitas</th>
                                                     <th>Nama</th>
-                                                    <th>Jenis Kelamin</th>
-                                                    <th>Agama</th>
+                                                    <th>Asal Kantor</th>
+                                                    <th>Jabatan</th>
+                                                    <th>Paraf</th>
                                                     <th><i class="fa fa-cog"></i></th>
                                                 </tr>
                                             </tfoot>

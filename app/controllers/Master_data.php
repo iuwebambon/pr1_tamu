@@ -19,17 +19,26 @@ class Master_data extends Controller
         if (isset($_POST['no_identitas'][0])) {
             $error = 0;
             for ($i = 0; $i < count($_POST['no_identitas']); $i++) {
+                // simpan tanda tangan
+                $paraf = explode(';base64,', $_POST['paraf'][$i]);
+                $paraf = base64_decode($paraf[1]);
+                $paraf_name = uniqid() . '.png';
+                file_put_contents('files/pribadi/images/paraf/' . $paraf_name, $paraf);
+
                 $no_identitas = $_POST['no_identitas'][$i];
                 $nama = $_POST['nama'][$i];
                 $alamat = $_POST['alamat'][$i];
                 $pekerjaan = $_POST['pekerjaan'][$i];
                 $agama = $_POST['agama'][$i];
+                $asal_kantor = $_POST['asal_kantor'][$i];
+                $jabatan = $_POST['jabatan'][$i];
                 $keperluan = $_POST['keperluan'][$i];
                 $jenis_kelamin = $_POST['jenis_kelamin'][$i];
                 $no_telepon = $_POST['no_telepon'][$i];
                 $tanggal = $_POST['tanggal'][$i];
+                $paraff = $paraf_name;
 
-                $query = "INSERT INTO `tamu`(`no_identitas`, `nama`, `alamat`, `pekerjaan`, `agama`, `keperluan`, `jenis_kelamin`, `no_telepon`, `tanggal`) VALUES ('$no_identitas','$nama','$alamat','$pekerjaan','$agama','$keperluan','$jenis_kelamin','$no_telepon','$tanggal')";
+                $query = "INSERT INTO `tamu`(`no_identitas`, `nama`, `alamat`, `pekerjaan`, `agama`, `asal_kantor`, `jabatan`, `keperluan`, `jenis_kelamin`, `no_telepon`, `tanggal`, `paraf`) VALUES ('$no_identitas','$nama','$alamat','$pekerjaan','$agama', '$asal_kantor', '$jabatan','$keperluan','$jenis_kelamin','$no_telepon','$tanggal', '$paraff')";
 
                 $error = mysqli_query(conn(), $query);
             }
